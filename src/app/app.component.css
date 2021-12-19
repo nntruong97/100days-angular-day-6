@@ -4,12 +4,12 @@ p {
 
 
 .box {
-  border: solid 1px black;
+  border: solid 2px black;
   width: 100px;
   height: 100px;
 }
 .red-border {
-  border: solid 1px red ;
+  border: solid 2px red ;
 }
 .backgroud-color{
   background-color: yellow;

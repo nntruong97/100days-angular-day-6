@@ -1,9 +1,19 @@
 <hello name="{{ name }}"></hello>
 
-<button (click)="isDanger =!isDanger">isDanger</button>
+<button (click)="isDanger = !isDanger">isDanger</button>
 <br />
-<button (click)="isWarning =!isWarning">isDoggle</button>
+<button (click)="isWarning = !isWarning">isWarning</button>
 
-<p class="classes">Start editing to see some magic happen :)</p>
+<div
+  class="box"
+  [class.red-border]="isDanger"
+  [class.backgroud-color]="isWarning"
+></div>
 
-<div class ="box" [class.red-border]="isDanger" [class.backgroud-color]="isWarning"></div>
+<p [style.backgroundColor]="'yellow'" [style.fontSize.rem]="'2'">
+  Start editing to see some magic happen :)
+</p>
+
+<p [style]="{ color: 'red', backgroundColor: 'yellow', fontSize: '2rem' }">
+  Start editing to see some magic happen :)
+</p>
